@@ -8,12 +8,9 @@
 			}
 
 		</style>
-		<link rel="stylesheet" href="{$module_dir|escape:'htmlall':'UTF-8'}views/css/culqi.css" type="text/css" media="all">
-    <link rel="stylesheet" href="{$module_dir|escape:'htmlall':'UTF-8'}views/css/waitMe.min.css" type="text/css" media="all">
 
-		<div class="row" >
-			<div class="col-md-3 col-xs-1"></div>
-			<div class="col-md-5 col-xs-8">
+		<div class="clearfix" >
+			<div class="col-md-12 col-xs-12">
 				<form id="form-payment" >
 					<div class="form-group">
 						<h6>Correo Electronico</h6>
@@ -46,18 +43,16 @@
 					<b id="showresultcontent"></b>
 				</p>
 			</div>
-			<div class="col-md-4 col-xs-9"></div>
-
 		</div>
 		<br/>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+{*<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://checkout.culqi.com/v2"></script>
-<script type="text/javascript" defer src="{$module_dir|escape:'htmlall':'UTF-8'}views/js/waitMe.min.js"></script>
+<script type="text/javascript" defer src="{$module_dir|escape:'htmlall':'UTF-8'}views/js/waitMe.min.js"></script>*}
 
 
-{literal}
-<script>
+{*{literal}*}
+{*<script>
 
 	$(".culqi-expm").on("input" , function() {
 	  this.value = this.value.replace(/[^0-9]/g,'');
@@ -185,13 +180,13 @@ function fnReplace(url) {
   return url.replace(/&amp;/g, '&');
 }
 
-</script>
+</script>*}
 
-{/literal}
+{*{/literal}*}
 
-<script defer src="https://www.culqi.com/libs/jquery.culqi.js"></script>
+{*<script defer src="https://www.culqi.com/libs/jquery.culqi.js"></script>*}
 <script>
-$(function () {
+{*$(function () {
 		$("#form-payment").checkout({
 				inputs: [
 					{ id: "#input-card",
@@ -203,5 +198,5 @@ $(function () {
 					}
 				]
 		});
-	});
+	});*}
 </script>
